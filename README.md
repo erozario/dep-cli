@@ -1,5 +1,5 @@
 # golang-dep
-[![Docker Build Status](https://img.shields.io/docker/build/eduardoagrj/golang-builder-dep.svg)](https://hub.docker.com/r/eduardoagrj/golang-builder-dep/builds/)
+[![Docker Build Status](https://img.shields.io/docker/build/eduardoagrj/golang-dep.svg)](https://hub.docker.com/r/eduardoagrj/golang-builder-dep/builds/)
 
 Dockerized [golang dep command-line tool](https://github.com/golang/dep) with options to use:
 
