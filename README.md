@@ -1,5 +1,4 @@
-# golang-dep
-[![Docker Build Status](https://img.shields.io/docker/build/eduardoagrj/golang-dep.svg)](https://hub.docker.com/r/eduardoagrj/golang-dep/builds/)
+[![Docker Build Status](https://img.shields.io/docker/build/eduardoagrj/dep-cli.svg?style=flat-square)](https://hub.docker.com/r/eduardoagrj/dep-cli/builds/)
 
 Dockerized [golang dep command-line tool](https://github.com/golang/dep) with options to use:
 
@@ -19,14 +18,14 @@ Dockerized [golang dep command-line tool](https://github.com/golang/dep) with op
 
 ## Getting started
 
-`docker run eduardoagrj/golang-dep [dep cli arguments here]`
+`docker run eduardoagrj/dep-cli [dep cli arguments here]`
 
 ## Usage
 
 Create a multi stage docker builds for creating tiny Go images.
 
 ```
-    FROM eduardoagrj/golang-dep AS builder
+    FROM eduardoagrj/dep-cli AS builder
     COPY Gopkg.* *.go /go/src/app/
     WORKDIR /go/src/app/
     RUN dep ensure --vendor-only \
